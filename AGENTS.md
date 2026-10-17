@@ -1,0 +1,3 @@
+# Total Annihilator — GitHub development guidance
+
+Every future GitHub/Codex Actions or build/test task must read [`docs/GITHUB-CI-HARDWARE.md`](docs/GITHUB-CI-HARDWARE.md). This is a small static HTML repository: do not create unnecessary compute jobs. When a trusted project-scoped self-hosted runner is actually available, regular independent browser tests may start at 4 Workers, up to 6 only with >=8 effective CPUs and >=10 GiB free memory and unchanged correctness. Never assume VoidFlare's runner is already registered here. Do not delete historical evidence, run paid CI, or auto-merge/publish without authorization.
